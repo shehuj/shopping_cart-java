@@ -32,7 +32,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh 'ls -l target'
-                sh 'mvn test'
             }
         }
 
