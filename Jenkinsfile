@@ -31,10 +31,10 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'ls -l target' \
-                    'groups' \
-                    'ls -l /var/run/docker.sock' \
-                    'docker run hello-world'
+                sh 'ls -l target'
+                sh 'groups'
+                sh 'ls -l /var/run/docker.sock'
+                sh 'docker run hello-world'
             }
         }
 
