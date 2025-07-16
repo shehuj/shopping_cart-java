@@ -34,7 +34,7 @@ pipeline {
                 sh 'ls -l target'
                 sh 'groups'
                 sh 'ls -l /var/run/docker.sock'
-                sh 'docker run hello-world'
+                sh 'mvn test -Dmaven.test.failure.ignore=true'
             }
         }
 
